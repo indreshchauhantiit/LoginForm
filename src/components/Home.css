@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section {
+  background: #fff;
+  padding: 50px 20px;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 100px;
+  border-radius: 12px;
+  padding-bottom: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 50px 35px;
+  box-shadow: 0 12px 80px rgba(0,0,0,0.15);
+  border-radius: 60px;
+  margin-top: 60px;
+  padding-bottom: 50px; /* Yeh form ko niche push karega */
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #f44336;
+  font-size: 22px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f44336;
+  box-shadow: 0 0 6px rgba(244, 67, 54, 0.3);
+}
+
+.contact-form button {
+  padding: 14px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: #e53935;
+  transform: translateY(-2px);
+}
+
+footer {
+  background: #f44336;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
